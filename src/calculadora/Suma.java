@@ -35,7 +35,7 @@ public class Suma {
 	 */
 	
 	public double sumarDosReales(double numReal1, double numReal2) {
-
+			return numReal1 + numReal2;
 	}
 	
 	/**
@@ -51,7 +51,7 @@ public class Suma {
 	 */
 	
 	public double sumarDosEnteros(int numEntero1, int numEntero2) {
-			
+			return numEntero1 + numEntero2;
 	}
 	
 	/**
@@ -68,7 +68,7 @@ public class Suma {
 	 */
 	
 	public double sumarTresReales(double numReal1, double numReal2, double numReal3) {
-			
+			return numReal1 + numReal2 + numReal3;
 	}
 		
 	/**
@@ -79,7 +79,7 @@ public class Suma {
 	 */
 	
 	public static void acumulado(double numeroSumaAcumulado) {
-		
+			sumaAcumulada += numeroSumaAcumulado;
 	}
 		
 }

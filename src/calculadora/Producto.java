@@ -32,7 +32,7 @@ public class Producto {
 	 */
 	
 	public double productoDosReales(double numReal1, double numReal2) {
-			return (numReal1 * numReal2);
+			return numReal1 * numReal2;
 	}
 	
 	/**
@@ -50,7 +50,7 @@ public class Producto {
 	 * 
 	 */
 	public double productoEntero(int numEntero1, int numEntero2) {
-		return (numEntero1 * numEntero2);
+		return numEntero1 * numEntero2;
 	}
 	
 	/**
@@ -69,7 +69,7 @@ public class Producto {
 	 * 
 	 */
 	public double productoTresReales(double numReal1, double numReal2, double numReal3) {
-		return(numReal1 * numReal2 * numReal3);
+		return numReal1 * numReal2 * numReal3;
 	}
 	
 	/**

@@ -50,6 +50,7 @@ public class Producto {
 	 * 
 	 */
 	public double productoEntero(int numEntero1, int numEntero2) {
+		return (numEntero1 * numEntero2);
 	}
 	
 	/**
@@ -68,6 +69,7 @@ public class Producto {
 	 * 
 	 */
 	public double productoTresReales(double numReal1, double numReal2, double numReal3) {
+		return(numReal1 * numReal2 * numReal3);
 	}
 	
 	/**
@@ -88,5 +90,6 @@ public class Producto {
 	 */
 	
 	public double potencia(double base, double exponente) {
+		return Math.pow(base, exponente);
 	}
 }

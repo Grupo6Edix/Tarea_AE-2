@@ -32,6 +32,7 @@ public class Producto {
 	 */
 	
 	public double productoDosReales(double numReal1, double numReal2) {
+			return (numReal1 * numReal2);
 	}
 	
 	/**

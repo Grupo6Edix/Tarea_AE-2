@@ -31,7 +31,7 @@ public class Cociente {
 	 */
 
 	public double divisionReal(double dividendoReal, double divisorReal) {
-		
+		return dividendoReal / divisorReal;
 	}
 	
 	/**
@@ -54,7 +54,7 @@ public class Cociente {
 	 */
 	
 	public double divisionEntera(int dividendoEntero, int divisorEntero) {
-		
+		return (double) dividendoEntero / divisorEntero;
 	}
 	
 	/**
@@ -69,7 +69,7 @@ public class Cociente {
 	 */
 	
 	public double inverso(double numeroReal) {	
-        
+        return 1 / numeroReal;
 	}
 	
 	/**
@@ -82,7 +82,7 @@ public class Cociente {
 	 */
 	
 	public double raiz(double numeroReal) {
-		
+		return Math.sqrt(numeroReal);
 	}
 	
 	

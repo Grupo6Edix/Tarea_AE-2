@@ -39,7 +39,7 @@ public class Resta {
 	 */
 
 	public double restaReal(double numero1Real, double numero2Real ) {
-	
+		return numero1Real - numero2Real;
 	}	
 		
 	/**
@@ -56,7 +56,7 @@ public class Resta {
 	 */
 		
 	public int restaEntera(int numero1Entero, int numero2Entero ) {	
-		
+		return numero1Entero - numero2Entero;
 	}
 	
 	/**
@@ -75,7 +75,7 @@ public class Resta {
 	 */
 	
 	public double restaRealTriple(double numero1Real, double numero2Real, double numero3Real) {	
-        
+        return numero1Real - numero2Real - numero3Real;
 	}
 	
 	/**
@@ -90,7 +90,7 @@ public class Resta {
 	 */
 	
 	public static void acumulado(double numeroRestaAcumulado) {
-		
+		restaAcumulada -= numeroRestaAcumulado;
 	}
 	
 }

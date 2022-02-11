@@ -32,7 +32,7 @@ public class Cociente {
 	 * Si se introduce el número 0 en el parámetro num2, devuelve código de error -2.
 	 */
 
-	public double divisionReal(double num1, double num2) {
+	public static double divisionReal(double num1, double num2) {
 		if(num1 < 0 || num2 < 0)
 			return -1;
 		else if (num2 == 0)
@@ -62,7 +62,7 @@ public class Cociente {
 	 * Si se introduce el número 0 en el parámetro num2, devuelve código de error -2.
 	 */
 	
-	public double divisionEntera(int num1, int num2) {
+	public static double divisionEntera(int num1, int num2) {
 		if(num1 < 0 || num2 < 0)
 			return -1;
 		else if (num2 == 0)
@@ -83,7 +83,7 @@ public class Cociente {
 	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double inverso(double num1) {	
+	public static double inverso(double num1) {	
 		if(num1 < 0)
 			return -1;
 		else
@@ -100,7 +100,7 @@ public class Cociente {
 	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double raiz(double num1) {
+	public static double raiz(double num1) {
 		if(num1 < 0)
 			return -1;
 		else

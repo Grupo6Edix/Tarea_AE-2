@@ -39,7 +39,7 @@ public class Resta {
 	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 
-	public double restaReal(double num1, double num2 ) {
+	public static double restaReal(double num1, double num2 ) {
 		if(num1 < 0 || num2 < 0)
 			return -1;
 		else
@@ -60,7 +60,7 @@ public class Resta {
 	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 		
-	public int restaEntera(int num1, int num2 ) {
+	public static int restaEntera(int num1, int num2 ) {
 		if(num1 < 0 || num2 < 0)
 			return -1;
 		else
@@ -83,7 +83,7 @@ public class Resta {
 	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double restaRealTriple(double num1, double num2, double num3) {
+	public static double restaRealTriple(double num1, double num2, double num3) {
 		if(num1 < 0 || num2 < 0 || num3 < 0)
 			return -1;
 		else

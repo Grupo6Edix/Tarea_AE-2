@@ -99,7 +99,7 @@ public class Suma {
 	
 	public static void acumulado(double num1) {
 		if (num1 < 0)
-			sumaAcumulada -= 0;
+			sumaAcumulada += 0;
 		else
 			sumaAcumulada += num1;
 	}

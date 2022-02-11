@@ -27,70 +27,88 @@ public class Resta {
 
 	/**
 	 * Método que devuelve un valor numérico real
-	 * resultado de la resta de dos parámetros: <i>numero1Real</i> y <i>numero2Real</i>.<br>
+	 * resultado de la resta de dos parámetros: <i>num1</i> y <i>num2</i>.<br>
 	 * 
 	 * No se podrán utilizar valores negativos en los parámetros de entrada.<br>
 	 * 
-	 * @param numero1Real representa el valor numérico real del primer parámetro de la resta.
-	 * @param numero2Real representa el valor numérico real del segundo parámetro de la resta.
+	 * @param num1 representa el valor numérico real del primer parámetro de la resta.
+	 * @param num2 representa el valor numérico real del segundo parámetro de la resta.
 	 * 
 	 * @return Devuelve un <u>valor numérico real</u> siendo el resultado de la resta entre
-	 * los dos parámetros.
+	 * los dos parámetros.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 
-	public double restaReal(double numero1Real, double numero2Real ) {
-		return numero1Real - numero2Real;
+	public double restaReal(double num1, double num2 ) {
+		if(num1 < 0 || num2 < 0)
+			return -1;
+		else
+			return num1 - num2;
 	}	
 		
 	/**
 	 * Método que devuelve un valor numérico entero
-	 * resultado de la resta de dos parámetros: <i>numero1Entero</i> y <i>numero2Entero</i>.<br>
+	 * resultado de la resta de dos parámetros: <i>num1</i> y <i>num2</i>.<br>
 	 * 
 	 * No se podrán utilizar valores negativos en los parámetros de entrada.<br>
 	 * 
-	 * @param numero1Entero representa el valor numérico entero del primer parámetro de la resta.
-	 * @param numero2Entero representa el valor numérico entero del segundo parámetro de la resta.
+	 * @param num1 representa el valor numérico entero del primer parámetro de la resta.
+	 * @param num2 representa el valor numérico entero del segundo parámetro de la resta.
 	 * 
 	 * @return Devuelve un <u>valor numérico entero</u> siendo el resultado de la resta entre
-	 * los dos parámetros.
+	 * los dos parámetros.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 		
-	public int restaEntera(int numero1Entero, int numero2Entero ) {	
-		return numero1Entero - numero2Entero;
+	public int restaEntera(int num1, int num2 ) {
+		if(num1 < 0 || num2 < 0)
+			return -1;
+		else
+			return num1 - num2;
 	}
 	
 	/**
 	 * Método que devuelve un valor numérico real
-	 * resultado de la resta de tres parámetros: <i>numero1Entero</i>, 
-	 * <i>numero2Entero</i> y <i>numero3Real</i> .<br>
+	 * resultado de la resta de tres parámetros: <i>num1</i>, 
+	 * <i>num2</i> y <i>num3</i> .<br>
 	 * 
 	 * No se podrán utilizar valores negativos en los parámetros de entrada.<br>
 	 * 
-	 * @param numero1Real representa el valor numérico real del primer parámetro de la resta.
-	 * @param numero2Real representa el valor numérico real del segundo parámetro de la resta.
-	 * @param numero3Real representa el valor numérico real del tercer parámetro de la resta.
+	 * @param num1 representa el valor numérico real del primer parámetro de la resta.
+	 * @param num2 representa el valor numérico real del segundo parámetro de la resta.
+	 * @param num3 representa el valor numérico real del tercer parámetro de la resta.
 	 * 
 	 * @return Devuelve un <u>valor numérico entero</u> siendo el resultado de la resta entre
-	 * los tres parámetros.
+	 * los tres parámetros.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double restaRealTriple(double numero1Real, double numero2Real, double numero3Real) {	
-        return numero1Real - numero2Real - numero3Real;
+	public double restaRealTriple(double num1, double num2, double num3) {
+		if(num1 < 0 || num2 < 0 || num3 < 0)
+			return -1;
+		else
+			return num1 - num2 - num3;
 	}
 	
 	/**
 	 * Método que sirve para restar el parámetro de entrada al acumulado del método.
 	 * 
-	 * Para ello, se acumula el valor del parámetro <i>numeroRestaAcumulado</i>
+	 * Para ello, se acumula el valor del parámetro <i>num1</i>
 	 * en el atributo de clase <i>restaAcumulada</i>, el cual restará a ese acumulada los siguientes
 	 * valores que se introduzcan del parámetro.
 	 * 
-	 * @param numeroRestaAcumulado representa el valor numérico real que se quiere restar
-	 * al acumulado del método.
+	 * No se podrán utilizar valores negativos en los parámetros de entrada.<br>
+	 * 
+	 * @param num1 representa el valor numérico real que se quiere restar
+	 * al acumulado del método.<br>
+	 * Si se introduce un número negativo, devuelve código de error 0.
 	 */
 	
-	public static void acumulado(double numeroRestaAcumulado) {
-		restaAcumulada -= numeroRestaAcumulado;
+	public static void acumulado(double num1) {
+		if(num1 < 0)
+			restaAcumulada -= 0;
+		else
+			restaAcumulada -= num1;
 	}
 	
 }

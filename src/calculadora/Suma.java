@@ -23,63 +23,79 @@ public class Suma {
 	}
 		
 	/**
-	 * Método que devuelve un valor númerico real de <i>numReal1</i> y <i>numReal2</i>.<br>
+	 * Método que devuelve un valor númerico real de <i>num1</i> y <i>num2</i>.<br>
 	 * 
 	 * No se permiten números negativos en los parámetros de entrada.
 	 * 
-	 * @param numReal1 representa el primer valor númerico real que se sumara.
-	 * @param numReal2 representa el segundo valor númerico real que se sumara.
+	 * @param num1 representa el primer valor númerico real que se sumara.
+	 * @param num2 representa el segundo valor númerico real que se sumara.
 	 * 
 	 * @return sumarDosReales suma dos números reales entre si,<br>
-	 * y te devuelve el valor de numReal1 y numReal2.
+	 * y te devuelve el valor de num1 y num2.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double sumarDosReales(double numReal1, double numReal2) {
-			return numReal1 + numReal2;
+	public static double sumarDosReales(double num1, double num2) {
+		if (num1 < 0 || num2 < 0)
+			return -1;
+		else
+			return (double) num1 + num2;
 	}
 	
 	/**
-	 * Método que devuelve un valor númerico entero de <i>numEntero1</i> y <i>numEntero2</i>.<br>
+	 * Método que devuelve un valor númerico entero de <i>num1</i> y <i>num2</i>.<br>
 	 * 
 	 * No se permiten números negativos en los parámetros de entrada.
 	 * 
-	 * @param numEntero1 representa el primer valor númerico entero que se sumara.
-	 * @param numEntero2 representa el segundo valor númerico entero que se sumara.
+	 * @param num1 representa el primer valor númerico entero que se sumara.
+	 * @param num2 representa el segundo valor númerico entero que se sumara.
 	 * 
 	 * @return sumarDosEnteros suma dos números enteros entre si,<br>
-	 * y te devuelve el valor de numEntero1 y numEntero2.
+	 * y te devuelve el valor de num1 y num2.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double sumarDosEnteros(int numEntero1, int numEntero2) {
-			return numEntero1 + numEntero2;
+	public static double sumarDosEnteros(int num1, int num2) {
+		if (num1 < 0 || num2 < 0)
+			return -1;
+		else
+			return num1 + num2;
 	}
 	
 	/**
-	 * Método que devuelve un valor númerico real de <i>numReal1</i>, <i>numReal2</i> y <i>numReal3</i>.<br>
+	 * Método que devuelve un valor númerico real de <i>num1</i>, <i>num2</i> y <i>num3</i>.<br>
 	 * 
 	 * No se permiten números negativos en los parámetros de entrada.
 	 * 
-	 * @param numReal1 representa el primer valor númerico real que se sumara.
-	 * @param numReal2 representa el segundo valor númerico real que se sumara.
-	 * @param numReal3 representa el tercer valor númerico real que se sumara.
+	 * @param num1 representa el primer valor númerico real que se sumara.
+	 * @param num2 representa el segundo valor númerico real que se sumara.
+	 * @param num3 representa el tercer valor númerico real que se sumara.
 	 * 
-	 * @return sumarTresReales suma tres números reales entre si, y te devuelve el valor de numReal1,<br>
-	 * numReal2 y numReal3.
+	 * @return sumarTresReales suma tres números reales entre si, y te devuelve el valor de num1,<br>
+	 * num2 y num3.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public double sumarTresReales(double numReal1, double numReal2, double numReal3) {
-			return numReal1 + numReal2 + numReal3;
+	public static double sumarTresReales(double num1, double num2, double num3) {
+		if (num1 < 0 || num2 < 0 || num3 < 0)
+			return -1;
+		else
+			return num1 + num2 + num3;
 	}
 		
 	/**
 	 * Método que sirve para sumar el parámetro de entrada al acumulado del método.
 	 * 
 	 * @param numeroSumaAcumulado representa el valor númerico real
-	 * que se quiere sumar al acumulado del atributo de clase <i>sumaAcumulada</i>.
+	 * que se quiere sumar al acumulado del atributo de clase <i>sumaAcumulada</i>.<br>
+	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */
 	
-	public static void acumulado(double numeroSumaAcumulado) {
-			sumaAcumulada += numeroSumaAcumulado;
+	public static void acumulado(double num1) {
+		if (num1 < 0)
+			sumaAcumulada -= 0;
+		else
+			sumaAcumulada += num1;
 	}
 		
 }

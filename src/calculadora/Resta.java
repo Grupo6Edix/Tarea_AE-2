@@ -21,6 +21,13 @@ public class Resta {
 	
 	private static double restaAcumulada;
 	
+	
+	/**
+	 * Método get para devolver el valor de la acumulación del método acumulado().
+	 * 
+	 * @return restaAcumulada acumulación de valores de entrada del método acumulado()
+	 */
+	
 	public static double getRestaAcumulada() {
 		return restaAcumulada;
 	}

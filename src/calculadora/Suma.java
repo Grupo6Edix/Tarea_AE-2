@@ -18,6 +18,12 @@ public class Suma {
 	
 	private static double sumaAcumulada;
 		
+	/**
+	 * Método get para devolver el valor de la acumulación del método acumulado().
+	 * 
+	 * @return sumaAcumulada acumulación de valores de entrada del método acumulado()
+	 */
+	
 	public static double getSumaAcumulada() {
 		return sumaAcumulada;
 	}
@@ -86,7 +92,7 @@ public class Suma {
 	/**
 	 * Método que sirve para sumar el parámetro de entrada al acumulado del método.
 	 * 
-	 * @param numeroSumaAcumulado representa el valor númerico real
+	 * @param num1 representa el valor númerico real
 	 * que se quiere sumar al acumulado del atributo de clase <i>sumaAcumulada</i>.<br>
 	 * Si se introduce un número negativo, devuelve código de error -1.
 	 */

@@ -32,7 +32,7 @@ public class Producto {
 	 * 
 	 */
 	
-	public double productoDosReales(double num1, double num2) {
+	public static double productoDosReales(double num1, double num2) {
 			if(num1 < 0 || num2 < 0)
 				return -1;
 			else
@@ -54,7 +54,7 @@ public class Producto {
 	 * Si el valor introducido es negativo se devuelve código de error -1.
 	 * 
 	 */
-	public double productoEntero(int num1, int num2) {
+	public static double productoEntero(int num1, int num2) {
 		if(num1 < 0 || num2 < 0)
 			return -1;
 		else
@@ -77,7 +77,7 @@ public class Producto {
 	 * Si el valor introducido es negativo se devuelve código de error -1.
 	 * 
 	 */
-	public double productoTresReales(double num1, double num2, double num3) {
+	public static double productoTresReales(double num1, double num2, double num3) {
 		if(num1 < 0 || num2 < 0 || num3 <0)
 			return -1;
 		else
@@ -103,7 +103,7 @@ public class Producto {
 	 * 
 	 */
 	
-	public double potencia(double num1, double num2) {
+	public static double potencia(double num1, double num2) {
 		if(num1 < 0 || num2 < 0)
 			return -1;
 		else

@@ -24,6 +24,8 @@ public class Principal {
 		res1.acumulado(5);
 		System.out.println(res1.getRestaAcumulada() + "\n");
 		
+		
+		
 	}
 
 }

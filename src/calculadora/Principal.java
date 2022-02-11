@@ -50,7 +50,29 @@ public class Principal {
 		Resta.acumulado(-5);
 		Resta.acumulado(5);
 		System.out.println(Resta.getRestaAcumulada() + "\n");
-			
+		
+		System.out.println("Métodos clase Producto:" + "\n");
+		
+		if(Producto.productoDosReales(3.22, 8.7) == -1.0)
+			System.out.println("ERROR - Introducido número negativo");
+		else
+			System.out.println(Producto.productoDosReales(3.22, 8.7));
+		
+		if(Producto.productoEntero(7, 0) == -1.0)
+			System.out.println("ERROR - Introducido número negativo");
+		else
+			System.out.println(Producto.productoEntero(7, 0));
+		
+		if(Producto.productoTresReales(2.78, -0.15, 5.0) == -1.0)
+			System.out.println("ERROR - Introducido número negativo");
+		else
+			System.out.println(Producto.productoTresReales(2.78, -0.15, 5.0));
+		
+		if(Producto.potencia(9.12, 2.0) == -1.0)
+			System.out.println("ERROR - Introducido número negativo");
+		else
+			System.out.println(Producto.potencia(9.12, 2.0));
+		
 	}
 
 }

@@ -1,6 +1,24 @@
 package calculadora;
 
+/**
+ * <h2>Clase para implementar los métodos del resto de clases del paquete.</h2>
+ * 
+ * @author Jorge
+ * @since 11/02/2022
+ *
+ * @see Producto
+ * @see Resta
+ * @see Suma
+ * @see Cociente
+ */
+
 public class Principal {
+	
+	/**
+	 * Clase main donde se prueban los métodos.
+	 * 
+	 * @param args métodos del resto de clases.
+	 */
 
 	public static void main(String[] args) {
 				
